@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero-section{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(picture1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 10px 10px;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(221, 202, 95);
+    font-size: 30px; 
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+nav ul li{
+    list-style: none;
+    position: relative;
+}
+nav ul li::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background: rgb(221, 202, 95);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+header{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-message{
+    color: rgb(221, 202, 95);
+    display: block;
+    margin-top: 320px;
+    justify-content: center;
+}
+.hero-message h1{
+    font-weight:300;
+    font-size:60px;
+}
+.arrow{
+height: 20;
+width: 20;
+padding-top: 50px;
+
+}
+.abtme{
+
+}
+.about-me{
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-between;
+    gap: 10px;
+}
+.about-me h5{
+    margin: 20px 0 0 0;
+}
