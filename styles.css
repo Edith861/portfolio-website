@@ -8,7 +8,7 @@
 .hero-section{
     width: 100%;
     min-height: 100vh;
-    background-image: url(picture1.jpg);
+    background-image: url(Images/picture1.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -19,22 +19,22 @@
     width: 140px;
 }
 
-nav ul li a{
+.inicon ul li a{
     display: inline-block;
     text-decoration: none;
     color: rgb(221, 202, 95);
     font-size: 30px; 
 }
-nav ul{
+.inicon ul{
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
-nav ul li{
+.inicon  ul li{
     list-style: none;
     position: relative;
 }
-nav ul li::after{
+.inicon ul li::after{
     content: '';
     width: 0;
     height: 1px;
@@ -43,7 +43,7 @@ nav ul li::after{
     margin: auto;
     transition: 0.5s;
 }
-nav ul li:hover::after{
+.inicon  ul li:hover::after{
     width: 100%;
 }
 header{
@@ -51,6 +51,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    
 }
 
 .hero-message{
@@ -69,16 +74,146 @@ width: 20;
 padding-top: 50px;
 
 }
-.abtme{
-
+.abtme h2, img{
+    margin: 10px 0;
 }
+
 .about-me{
     display: flex;
+    justify-content: space-around;
     padding: 20px;
-    margin: 20px;
+    margin: 20px 20px 70px 20px;
     justify-content: space-between;
     gap: 10px;
 }
+
 .about-me h5{
     margin: 20px 0 0 0;
 }
+.about-me h4{
+    margin: 20px 0 0 0;
+}
+.tools{
+    display: flex;
+    margin: 10px 20px 70px 20px;
+    padding: 20px;
+    gap: 70px;
+    
+}
+.expert h2{
+    margin: 20px 20px 0px 20px;;
+    padding: 20px;
+}
+.tools h3{
+    margin: 10px 0;
+}
+.awesome{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px 70px 40px;
+    gap: 120px;
+    background-color: rgb(245, 239, 208);
+}
+.awesome h2{
+    margin: 40px 20px 10px 60px;
+}
+.awesome p{
+    margin: 40px 20px 40px 60px;
+}
+.btn1 button{
+    margin: 110px 100px 100px 70px ;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    border-style: hidden;
+    color: #ffff;
+}
+.lbp{
+    margin: 80px 20px 70px 60px;;
+}
+.lbp h2{
+    margin-bottom: 10px;
+}
+
+.blogpost{
+    display:flex;
+    justify-content: space-between;
+    gap: 20px ;
+}
+.blog{
+    justify-content:  center;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid rgb(224, 221, 221);
+    padding: 30px 20px;
+} 
+.blog p{
+    padding: 0 0 20px;
+}
+.blog button{
+    color: grey;
+    background-color: #fff;
+    border: none;
+
+}
+.info{
+    text-align: center;
+    margin:5px;
+    padding: 5%
+}
+.message{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 40px 70px 40px;
+    padding: 20px;
+    gap: none;
+}
+input, textarea {
+    padding:5px;
+    background-color: rgb(245, 239, 208);
+    border: none;
+}
+textarea {
+    width: 385px;
+    margin-top: 20px;
+    padding-top:20px;
+    padding-bottom: 50px ;
+    margin-bottom:30px ;
+}
+#msgbtn{
+    width: 385px;
+    height: 50px;
+    background-color:black;
+    color: #fff;
+    border: none;
+}
+#email{
+    margin-left: 14px;
+}
+.fimage{
+    padding: 20px;
+    margin: none;
+    align-self: center;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 60px 0 60px; 
+    background-color: rgb(245, 239, 208);
+}
+
+.ficons ul {
+    list-style: none;
+}
+.ficons ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: none;
+}
+footer p{
+    margin-top: 15px;
+}
+
+
